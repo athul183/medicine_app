@@ -1,8 +1,9 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:medicine_app/screens/signup/signup.dart';
+
 import 'package:animated_text_kit/animated_text_kit.dart';
+import 'package:medicine_app/screens/onboarding_screen/onboarding_screen.dart';
 
 class SplashWidget extends StatefulWidget {
   const SplashWidget({super.key});
@@ -22,7 +23,7 @@ class _SplashWidgetState extends State<SplashWidget> {
   void splash() {
     Timer(Duration(seconds: 2), () {
       Navigator.of(context).push(MaterialPageRoute(builder: (context) {
-        return RegisterPage();
+        return OnboardScreen();
       }));
     });
   }
